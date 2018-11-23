@@ -6,33 +6,40 @@ class Api::V1::PostsController < ApplicationController
   end
 
   def create
-    @post = post.create(post_params)
-    render json: @post, status: :created
+    @post = Post.create(post_params)
+    if @post.save
+      render json: @post, status: :created
+    else
+      render json: {errors: @post.errors.full_messages}, status: :error
+    end
   end
 
   def show
     @post = Post.find(params[:id])
-    render json: @post, status: 200
-  end
-
-  def edit
+    render json: @post, status: :found_post
   end
 
   def update
-    @note.update(post_params)
-    render json: @post, status: :updated
+    @post = Post.find(params[:id])
+    @post.update(post_params)
+
+    if @post.save
+      render json: @post, status: :updated
+    else
+      render json: {errors: @post.errors.full_messages}, status: :update_error
+    end
+  end
+
+  def destroy
+    @post.destroy
+    render json: @post, status: :deleted
   end
 
   private
 
-  def set_post
-    @post = Post.find_by(id: params[:id])
-  end
-
   def post_params
     params.require(:post).permit(:title, :body, :img_url, :user_id)
   end
-
 
 
 end
