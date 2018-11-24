@@ -3,5 +3,7 @@ class DoctorSerializer < ActiveModel::Serializer
   :img_url, :gender, :location_slug, :office_name, :accept_new_patients,
   :city, :lat, :lon, :state, :street, :street2, :zip, :phone
 
-  has_many :reviews 
+  has_many :reviews
+
+   
 end
