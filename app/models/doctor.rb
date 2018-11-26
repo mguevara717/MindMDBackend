@@ -1,4 +1,5 @@
 class Doctor < ApplicationRecord
+  
   has_many :reviews
 
   def self.get_response_hash(url)
@@ -21,5 +22,5 @@ class Doctor < ApplicationRecord
           end
         end
       end
-  end
+    end
 end

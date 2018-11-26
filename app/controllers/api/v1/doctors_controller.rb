@@ -6,7 +6,7 @@ class Api::V1::DoctorsController < ApplicationController
   end
 
   def create
-    @doctor = Post.create(doctor_params)
+    @doctor = Doctor.create(doctor_params)
     if @doctor.save
       render json: @doctor, status: :created
     else
