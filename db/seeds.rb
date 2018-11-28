@@ -30,7 +30,7 @@ Doctor.create(first_name: "Casey", middle_name: "Clark", last_name: "Arney", tit
 puts "done creating doctors"
 
 puts "creating users"
-User.create(name: "Marissa", mood: "cheerful", email: "marissa@gmail.com", password_digest: "test", profile_img: "test" )
+User.create(name: "Marissa", email: "marissa@gmail.com", password_digest: "test", profile_img: "test" )
 puts "done creating users"
 
 puts "creating posts"
