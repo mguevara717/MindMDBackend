@@ -1,5 +1,6 @@
 class Api::V1::DoctorsController < ApplicationController
-    skip_before_action :authorized 
+    skip_before_action :authorized
+    #need to be able to prevent users from creating a new doctor
 
   def index
     @doctors = Doctor.all
