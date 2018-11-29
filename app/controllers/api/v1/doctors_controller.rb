@@ -1,4 +1,5 @@
 class Api::V1::DoctorsController < ApplicationController
+    skip_before_action :authorized 
 
   def index
     @doctors = Doctor.all
