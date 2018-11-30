@@ -2,7 +2,7 @@ class Api::V1::AuthController < ApplicationController
   skip_before_action :authorized
 
   def create
-    @user = User.find_by(name: user_login_params[:name])
+    @user = User.find_by(email: user_login_params[:email])
 
     if @user && @user.authenticate(user_login_params[:password])
       #encode token comes from the application controller.
@@ -18,7 +18,7 @@ class Api::V1::AuthController < ApplicationController
   private
 
   def user_login_params
-    params.require(:user).permit(:name, :email, :profile_img, :password)
+    params.require(:user).permit(:email, :password)
   end
 
 
