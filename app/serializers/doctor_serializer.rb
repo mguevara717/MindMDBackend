@@ -4,7 +4,5 @@ class DoctorSerializer < ActiveModel::Serializer
   :city, :lat, :lon, :state, :street, :street2, :zip, :phone
 
 
-  has_many :reviews
-
 
 end

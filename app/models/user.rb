@@ -4,7 +4,8 @@ class User < ApplicationRecord
   validates :name, uniqueness: {case_sensitive: false}
 
   has_many :posts
-  has_many :reviews
+
+
 
 
 

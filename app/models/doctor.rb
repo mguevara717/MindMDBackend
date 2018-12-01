@@ -1,6 +1,4 @@
 class Doctor < ApplicationRecord
-
-  has_many :reviews
   # validates :uid, uniqueness: true
 
   def self.get_response_hash(url)
