@@ -1,5 +1,5 @@
 class Api::V1::UsersController < ApplicationController
-  skip_before_action :authorized, only: :create
+  # skip_before_action :authorized, only: :create
   #i dont want users to see other users, therefore adding skip_before_action
 
   def index
