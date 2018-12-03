@@ -1,5 +1,5 @@
 class Api::V1::UsersController < ApplicationController
-  # skip_before_action :authorized, only: :create
+  skip_before_action :authorized#, only: :create
   #i dont want users to see other users, therefore adding skip_before_action
 
   def index
@@ -8,7 +8,7 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def profile
-    render json: { user: UserSerializer.new(current_user) }, status: :created
+    render json: { user: UserSerializer.new(current_user) }, status: :accepted
   end
 
   def create

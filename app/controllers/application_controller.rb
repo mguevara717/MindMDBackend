@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-    # before_action :authorized
+    before_action :authorized
 
   def encode_token(payload)
     JWT.encode(payload, 'auth_secret')
@@ -24,7 +24,7 @@ class ApplicationController < ActionController::API
 
   def current_user
     if decoded_token
-      user_id = decode_token[0]['user_id']
+      user_id = decoded_token[0]['user_id']
       @user = User.find_by(id: user_id)
     end
   end
