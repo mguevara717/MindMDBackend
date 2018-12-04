@@ -7,5 +7,5 @@ class Insurance < ApplicationRecord
 
 
 
-  
+
 end
