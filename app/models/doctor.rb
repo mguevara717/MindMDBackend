@@ -1,5 +1,6 @@
 class Doctor < ApplicationRecord
   # validates :uid, uniqueness: true
+  has_many :insurances
 
   def self.get_response_hash(url)
     response_string = RestClient.get(url)
