@@ -1,5 +1,6 @@
 class Api::V1::UsersController < ApplicationController
-  skip_before_action :authorized#, only: :create
+  # skip_before_action :authorized
+  before_action :set_user, only: [:show, :update, :destroy]
   #i dont want users to see other users, therefore adding skip_before_action
 
   def index
@@ -22,8 +23,12 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
-    render json: @user, status: :found_user
+    render json: @user, status: :ok
+  end
+
+  def update
+  @user.update(user_params)
+   render json: @user, status: :ok
   end
 
   private
@@ -32,7 +37,9 @@ class Api::V1::UsersController < ApplicationController
     params.require(:user).permit(:name, :email, :profile_img, :password)
   end
 
-
+  def set_user
+    @user = User.find(params[:id])
+   end
 
 
 end
