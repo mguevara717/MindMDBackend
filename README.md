@@ -2,7 +2,7 @@ This project was used in conjunction with this frontend: https://github.com/mgue
 
 ## Mind MD
 
-##How to install
+## How to install
 
 Clone and make sure you have Postgres running on your machine already. 
 run rails db:create && rails db:migrate && db:seed. 
