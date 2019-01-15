@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.destroy_allx
+User.destroy_all
 Post.destroy_all
 Doctor.destroy_all
 Insurance.destroy_all
@@ -37,7 +37,6 @@ Doctor.create(first_name: "Rafael", middle_name: "", last_name: "Tatay", title: 
 Doctor.create(first_name: "Leonard", middle_name: "", last_name: "Diamond", title: "Psychiatrist, MD", img_url: "https://d1cesmq0xhh7we.cloudfront.net/e90c0fd8-d2f3-4706-bc2f-78d212d9d59ccircle_medium.png", gender: "male", location_slug: "ct-new-milford", office_name: "Associated Psychiatrists", accept_new_patients: true, city: "New Milford", lat: 41.57445, lon: -73.40988, state: "Connecticut", street: "29 S Main St", street2: "", zip: "06776", phone: "8603541111", bio: "Dr. Leonard Diamond, MD, specialist in prescribing (medical) psychology and psychiatry, currently treats patients in New york, New York and New milford, Connecticut.\n\nDr. Diamond graduated from Suny Downstate Medicine Ctr and is licensed to practice medicine at Connecticut.\n\nDr. Diamond has passed an automated background check which looked at elements including medical license status and malpractice screening (no history found).", practice: "Psychiatry", description: "Specializes in the diagnosis and treatment of children's mental disorders.")
 Doctor.create(first_name: "Jane", middle_name: "", last_name: "Kou", title: "Psychiatrist, MD", img_url: "https://d2t808ag5aqhkh.cloudfront.net/908e198a-d1b7-4f62-b328-04b5758fb019circle_medium__v2__.png", gender: "female", location_slug: "ny-syracuse", office_name: "DR. JANE KOU, PSYCHIATRIST, LLC", accept_new_patients: true, city: "Syracuse", lat: 43.042477, lon: -76.15156, state: "New York", street: "610 S Salina St", street2: "", zip: "13202", phone: "3154217479", bio: "Dr. Jane Kou is a psychiatrist in Syracuse, New York and is affiliated with St. Joseph's Hospital Health Center. She received her medical degree from Dow Medical College and has been in practice for 35 years. She is one of 15 doctors at St. Joseph's Hospital Health Center who specialize in Psychiatry.", practice: "Psychiatry", description: "Specializes in the diagnosis and treatment of children's mental disorders.")
 Doctor.create(first_name: "William", middle_name: "Stuart", last_name: "Hudson", title: "Psychiatrist, MD", img_url: "https://dsw5h1xg5uvx.cloudfront.net/406071b0-a059-440e-b72f-f79b099c9ffccircle_medium__v1__.png", gender: "male", location_slug: "ga-columbus", office_name: "St Francis Psychiatristllc", accept_new_patients: true, city: "Columbus", lat: 32.482735, lon: -84.968315, state: "Georgia", street: "2000 16th Ave", street2: "", zip: "31901", phone: "7063203770", bio: "Dr. William Hudson, MD--specialist in psychiatry--currently practices medicine at Columbus, Georgia, Atlanta, Georgia, Asheville, North Carolina, Alpharetta, Georgia, Cumming, Georgia, and Arden, North Carolina.\n\n\n\nIn addition to having active medical licenses, Dr. Hudson has been found during an automated background check to be clear of any malpractice history and holds one or more active medical licenses.", practice: "Psychiatry", description: "Specializes in the diagnosis and treatment of children's mental disorders.")
-Doctor.create(first_name: "Dinar", middle_name: "", last_name: "Sajan", title: "Psychiatrist, MD", img_url: "https://dsw5h1xg5uvx.cloudfront.net/2f8961ed-3cf6-4ea0-91bf-b3ca76526efclarge.jpg", gender: "female", location_slug: "fl-clearwater", office_name: "Health & Psychiatrist Consultants LLC", accept_new_patients: true, city: "Clearwater", lat: 28.019375, lon: -82.728409, state: "Florida", street: "2655 State Road 580", street2: "Ste 202", zip: "33761", phone: "7277336111", bio: "Dr. Dinar Sajan, MD--specialist in psychiatry--currently sees patients in Clearwater, Florida and Dunedin, Florida.\n\nDr. Sajan is licensed to treat patients in Florida.\n\nIn addition to having active medical licenses, Dr. Sajan has successfully passed a background check including a medical license verification (active) and screening for malpractice history (none found).", practice: "Psychiatry", description: "Specializes in the diagnosis and treatment of children's mental disorders.")
 Doctor.create(first_name: "Sandra", middle_name: "J", last_name: "Krussell", title: "Psychiatrist, MD", img_url: "https://d2t808ag5aqhkh.cloudfront.net/a824ab41-d8bc-4f38-9a78-b29a7dddac52circle_medium__v1__.png", gender: "female", location_slug: "or-portland", office_name: "Sandra J. Krussel, Do, Psychiatrist, LLC", accept_new_patients: true, city:"Portland", lat: 45.52672, lon: -122.69824, state: "Oregon", street: "530 NW 23rd Ave", street2: "Ste 117", zip: "97210", phone:"9713026451", bio: "Dr. Sandra Krussel, DO specializes in psychiatry, and currently treats patients in Portland, Oregon.\n\nDr. Krussel is licensed to treat patients in Oregon.\n\nIn addition to having active medical licenses, Dr. Krussel has successfully passed a background check including a medical license verification (active) and screening for malpractice history (none found).", practice: "Psychiatry", description: "Specializes in the diagnosis and treatment of children's mental disorders.")
 Doctor.create(first_name: "Casey", middle_name: "Clark", last_name: "Arney", title: "Psychiatrist, MD", img_url: "https://d2t808ag5aqhkh.cloudfront.net/cd269d91-9354-4ceb-bb83-b0abc57d5528circle_medium.png", gender: "male", location_slug: "tn-nashville", office_name: "Associated Psychiatrists Of Nashville", accept_new_patients: true, city: "Nashville", lat: 36.09544, lon: -86.82306, state: "Tennessee", street: "30 Burton Hills Blvd", street2: "Ste 375", zip: "37215", phone: "6153274877", bio: "Since beginning private practice in 1992, Dr Arney has enjoyed the work of office- based psychiatry. He particularly appreciates the effectiveness of combining different modes of treatment – psychotherapy, medication, and ancillary treatments- to help bring about needed change in his patient’s lives. In practice he addresses a range of issues including depression, anxiety, bipolar disorder, attention deficit disorder, grief, and difficulties adjusting to life changes. Dr Arney believes that a healthy mind requires attention to physical, emotional, spiritual, and relational health.\n\nA wide range of professional experiences informs Dr Arney’s work including forensic psychiatry, psychoanalysis, cognitive behavioral therapy, and experiential therapy. He attended medical school at University of Louisville School of Medicine, internship at Loyola University Medical Center, and residency at Vanderbilt University Medical Center. He remains on clinical faculty at Vanderbilt as Assistant Clinical Professor and enjoys supervising and teaching residents. He also maintains a weekly clinic at Vanderbilt University where he treats students. Dr Arney is certified in psychiatry by the American Board of Psychiatry and Neurology.", practice: "Psychiatry", description: "Specializes in the diagnosis and treatment of children's mental disorders.")
 puts "done creating doctors"
@@ -45,51 +44,56 @@ puts "done creating doctors"
 
 
 puts "creating insurances"
+2.times do
 Insurance.create(company: "Cigna-PPO", doctor: Doctor.all.sample)
-Insurance.create(company: "Cigna-PPO", doctor: Doctor.all.sample)
+end
+
+2.times do
 Insurance.create(company: "Cigna-HMO", doctor: Doctor.all.sample)
-Insurance.create(company: "Cigna-HMO", doctor: Doctor.all.sample)
+end
+
+2.times do
 Insurance.create(company: "Humana-Choice-Care-Network-PPO", doctor: Doctor.all.sample)
-Insurance.create(company: "Humana-Choice-Care-Network-PPO", doctor: Doctor.all.sample)
+end
+
+2.times do
 Insurance.create(company: "Aetna-PPO", doctor: Doctor.all.sample)
-Insurance.create(company: "Aetna-PPO", doctor: Doctor.all.sample)
+end
+
+2.times do
 Insurance.create(company: "Bcbsbluecard-PPO", doctor: Doctor.all.sample)
-Insurance.create(company: "Bcbsbluecard-PPO", doctor: Doctor.all.sample)
+end
+
+4.times do
 Insurance.create(company: "Multiplan-PPO", doctor: Doctor.all.sample)
-Insurance.create(company: "Multiplan-PPO", doctor: Doctor.all.sample)
-Insurance.create(company: "Multiplan-PPO", doctor: Doctor.all.sample)
-Insurance.create(company: "Multiplan-PPO", doctor: Doctor.all.sample)
+end
+
+3.times do
 Insurance.create(company: "Aetna-HMO", doctor: Doctor.all.sample)
-Insurance.create(company: "Aetna-HMO", doctor: Doctor.all.sample)
-Insurance.create(company: "Aetna-HMO", doctor: Doctor.all.sample)
+end
+
+7.times do
 Insurance.create(company: "Medicare", doctor: Doctor.all.sample)
-Insurance.create(company: "Medicare", doctor: Doctor.all.sample)
-Insurance.create(company: "Medicare", doctor: Doctor.all.sample)
-Insurance.create(company: "Medicaid", doctor: Doctor.all.sample)
-Insurance.create(company: "Medicaid", doctor: Doctor.all.sample)
-Insurance.create(company: "Medicaid", doctor: Doctor.all.sample)
-Insurance.create(company: "Medicaid", doctor: Doctor.all.sample)
+end
+
+5.times do
 Insurance.create(company: "GreatWest-PPO", doctor: Doctor.all.sample)
-Insurance.create(company: "GreatWest-PPO", doctor: Doctor.all.sample)
-Insurance.create(company: "GreatWest-PPO", doctor: Doctor.all.sample)
-Insurance.create(company: "GreatWest-PPO", doctor: Doctor.all.sample)
-Insurance.create(company: "GreatWest-PPO", doctor: Doctor.all.sample)
+end
+
+4.times do
 Insurance.create(company: "FirstHealth-PPO", doctor: Doctor.all.sample)
-Insurance.create(company: "FirstHealth-PPO", doctor: Doctor.all.sample)
-Insurance.create(company: "FirstHealth-PPO", doctor: Doctor.all.sample)
-Insurance.create(company: "FirstHealth-PPO", doctor: Doctor.all.sample)
+end
+
+4.times do
 Insurance.create(company: "Empire-Blue-PPO", doctor: Doctor.all.sample)
-Insurance.create(company: "Empire-Blue-PPO", doctor: Doctor.all.sample)
-Insurance.create(company: "Empire-Blue-PPO", doctor: Doctor.all.sample)
-Insurance.create(company: "Empire-Blue-PPO", doctor: Doctor.all.sample)
+end
+
+4.times do
 Insurance.create(company: "HIP-Insurance-Group", doctor: Doctor.all.sample)
-Insurance.create(company: "HIP-Insurance-Group", doctor: Doctor.all.sample)
-Insurance.create(company: "HIP-Insurance-Group", doctor: Doctor.all.sample)
-Insurance.create(company: "HIP-Insurance-Group", doctor: Doctor.all.sample)
+end
+
+6.times do
 Insurance.create(company: "WellCare-Group", doctor: Doctor.all.sample)
-Insurance.create(company: "WellCare-Group", doctor: Doctor.all.sample)
-Insurance.create(company: "WellCare-Group", doctor: Doctor.all.sample)
-Insurance.create(company: "WellCare-Group", doctor: Doctor.all.sample)
-Insurance.create(company: "WellCare-Group", doctor: Doctor.all.sample)
-Insurance.create(company: "WellCare-Group", doctor: Doctor.all.sample)
+end
+
 puts "done creating insurances"

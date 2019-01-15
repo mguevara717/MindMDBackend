@@ -1,7 +1,6 @@
 class Api::V1::UsersController < ApplicationController
   # skip_before_action :authorized
-  before_action :set_user, only: [:show, :update, :destroy]
-  #i dont want users to see other users, therefore adding skip_before_action
+  before_action :set_user, only: [:new, :show, :update, :destroy]
 
   def index
     @users = User.all
